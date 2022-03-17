@@ -1,0 +1,21 @@
+
+body{
+  background-color: rgb(245,245,245);
+}
+.banner-font {
+  text-shadow: 4px 6px 6px rgba(0, 0, 0, .5);
+  /*text-shadow: 0px 12px 2px rgb(0 0 0 / 60%);*/
+}
+.p-img {
+  transform: scale(0.8);
+  transition: all .5s;
+  opacity: 0.8;
+}
+
+.p-img:hover {
+  transform: scale(0.95);
+  opacity: 1;
+}
+.layout-container{
+  @apply tw-px-3 md:tw-px-6 lg:tw-px-12 xl:tw-px-24 2xl:tw-px-48;
+}

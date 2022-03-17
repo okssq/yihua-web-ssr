@@ -1,0 +1,30 @@
+{
+  "id": "3250444",
+  "name": "ehua-tech",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1280239",
+      "name": "email",
+      "font_class": "email",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "24111580",
+      "name": "微信",
+      "font_class": "wx",
+      "unicode": "fae4",
+      "unicode_decimal": 64228
+    },
+    {
+      "icon_id": "24111621",
+      "name": "钉钉",
+      "font_class": "dd",
+      "unicode": "fb0d",
+      "unicode_decimal": 64269
+    }
+  ]
+}
