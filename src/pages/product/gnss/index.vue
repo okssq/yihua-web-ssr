@@ -6,12 +6,34 @@
       <p class="q-mt-md">GNSS模块</p>
     </div>
   </div>
-  <div class="layout-container tw-py-12">
-    <q-breadcrumbs gutter="sm" class="text-subtitle2 text-grey-7">
+  <div class="layout-container">
+    <q-breadcrumbs gutter="sm" class="text-subtitle2 text-grey-7 tw-py-6">
       <q-breadcrumbs-el label="首页" to="/" class="hover:tw-text-black"/>
-      <q-breadcrumbs-el label="产品展示"/>
+      <q-breadcrumbs-el >
+        <q-btn-dropdown padding="2px 0 2px 12px" flat color="grey-7" label="产品展示">
+          <q-list>
+            <q-item clickable v-close-popup to="/product/gnss">
+              <q-item-section>
+                <q-item-label>GNSS模块</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-close-popup to="/product/plan" >
+              <q-item-section>
+                <q-item-label>解决方案</q-item-label>
+              </q-item-section>
+            </q-item>
+            <q-item clickable v-close-popup to="/product/smart" >
+              <q-item-section>
+                <q-item-label>智慧城市</q-item-label>
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-btn-dropdown>
+      </q-breadcrumbs-el>
       <q-breadcrumbs-el label="GNSS模块"/>
     </q-breadcrumbs>
+  </div>
+  <div class="layout-container tw-pb-4 md:tw-pb-12">
     <div class="q-mt-md" v-for="classItem in gnssList" :key="classItem.id">
       <div class="tw-text-lg tw-py-4">{{ classItem.name }}</div>
       <div
@@ -21,7 +43,6 @@
           <div class="overflow-hidden">
             <q-img class="p-img" :ratio="4/3" fit="contain" :src="pItem.src"/>
           </div>
-
           <q-separator/>
           <q-card-section>
             <div class="row no-wrap items-center">
@@ -43,7 +64,10 @@ import {useRouter} from "vue-router";
 const router = useRouter()
 const onHandleProduct = (pItem) => {
   const {id} = pItem
-  router.push(`/product/gnss/${id}`)
+  router.push({
+    path: '/product/gnss/list',
+    query: {id}
+  })
 }
 </script>
 
@@ -53,6 +77,6 @@ const onHandleProduct = (pItem) => {
   background-size: cover;
   opacity: 0.8;
   background-position: center;
-  background-image: url("~assets/product-bg.jpg");
+  background-image: url("~assets/imgs/product/gnss-bg.jpg");
 }
 </style>

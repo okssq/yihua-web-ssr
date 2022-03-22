@@ -11,8 +11,12 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "@quasar/extras": "^1.0.0",
+    "axios": "^0.26.1",
     "core-js": "^3.6.5",
+    "node-fetch": "^3.2.3",
+    "qs": "^6.10.3",
     "quasar": "^2.0.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0"

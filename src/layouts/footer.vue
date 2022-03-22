@@ -13,8 +13,16 @@
           transition-hide="fade"
           transition-show="fade"
         >
-          <div class="q-pa-md">
-            <q-img src="~assets/qrcode.png" height="140px" width="140px"/>
+          <div class="q-pa-sm row items-center text-center text-bold text-grey-8">
+            <div>
+              <q-img src="~assets/imgs/qrcode.png" height="140px" width="140px"/>
+              <div>商务联系</div>
+            </div>
+            <q-separator vertical class="q-mx-sm"/>
+            <div>
+              <q-img src="~assets/imgs/qrcode.png" height="140px" width="140px"/>
+              <div>硬件联系</div>
+            </div>
           </div>
         </q-menu>
       </q-btn>
@@ -55,12 +63,11 @@
       </div>
     </div>
     <div class="column items-center tw-my-4">
-      <q-btn target="_blank"
-             href="https://ditu.amap.com/search?query=%E6%98%8E%E5%90%9B%E5%95%86%E5%8A%A1%E4%B8%AD%E5%BF%83&city=440000&geoobj=109.838032%7C21.026053%7C118.690444%7C25.358739&zoom=7.84"
+      <q-btn to="/contact-us"
              push class="bg-white" round icon="share_location" text-color="orange"></q-btn>
       <div class="q-my-sm">地址/Address</div>
       <div class="tw-font-semibold tw-px-8">
-        龙华区大浪深圳市龙华区浪荣路1号明君商务中心903A室
+        深圳市龙华区浪荣路1号明君商务中心903A室
       </div>
     </div>
   </div>

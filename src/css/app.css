@@ -1,10 +1,33 @@
-
 body{
   background-color: rgb(245,245,245);
 }
+.layout-container{
+  @apply tw-px-4 md:tw-px-6 lg:tw-px-12 xl:tw-px-24 2xl:tw-px-48;
+}
 .banner-font {
   text-shadow: 4px 6px 6px rgba(0, 0, 0, .5);
-  /*text-shadow: 0px 12px 2px rgb(0 0 0 / 60%);*/
+}
+.tip-shadow:after, .tip-shadow:before {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 10px;
+  left: calc(50% - 6px);
+  position: absolute;
+  top: -6px;
+  transform: rotate(
+    315deg
+  );
+  width: 10px;
+}
+.tip-shadow:after {
+  box-shadow: 0 2px 2px #0000004d;
+  z-index: -1;
+}
+
+.product-nav .q-expansion-item__container .q-item__section--side{
+  padding-left: 0;
+  margin-right: -10px;
 }
 .p-img {
   transform: scale(0.8);
@@ -16,6 +39,12 @@ body{
   transform: scale(0.95);
   opacity: 1;
 }
-.layout-container{
-  @apply tw-px-3 md:tw-px-6 lg:tw-px-12 xl:tw-px-24 2xl:tw-px-48;
+.news p{
+  @apply tw-text-lg
+}
+.news img{
+  margin: 8px auto;
+}
+.rdwz,.article-notice,.amap-copyright,.amap-logo{
+  display: none !important;
 }
