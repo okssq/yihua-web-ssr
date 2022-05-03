@@ -1,6 +1,6 @@
 {
-  "tailwindcss2": {
-    "prefix": "tw",
+  "tailwindcss": {
+    "prefix": "tw-",
     "parts": [
       "base",
       "components",
